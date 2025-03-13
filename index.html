@@ -3,88 +3,143 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ABC Tech Solutions</title>
+    <title>Fabricators | Expert Metal Works</title>
     <style>
         body {
-            font-family: Arial, sans-serif;
+            font-family: 'Poppins', sans-serif;
             margin: 0;
             padding: 0;
-            background-color: #f4f4f4;
+            background: linear-gradient(180deg, #1a1a1a, #2c3e50);
+            color: #eee;
         }
         header {
-            background: #333;
+            background: linear-gradient(135deg, #1e3c72, #2a5298);
             color: white;
-            padding: 15px;
+            padding: 40px;
             text-align: center;
+            position: relative;
+            box-shadow: 0px 6px 15px rgba(0,0,0,0.4);
+        }
+        .logo {
+            position: absolute;
+            left: 30px;
+            top: 15px;
+            height: 70px;
+            animation: fadeIn 2s ease-in-out, float 3s infinite alternate ease-in-out;
+        }
+        h1 {
+            font-size: 2.5em;
+            font-weight: bold;
+            text-transform: uppercase;
+            animation: slideIn 1.5s ease-in-out;
+        }
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+        @keyframes slideIn {
+            from { transform: translateY(-50px); opacity: 0; }
+            to { transform: translateY(0); opacity: 1; }
+        }
+        @keyframes float {
+            from { transform: translateY(0px); }
+            to { transform: translateY(10px); }
         }
         nav {
             display: flex;
             justify-content: center;
-            background: #444;
-            padding: 10px;
+            background: #1a1a1a;
+            padding: 20px;
+            box-shadow: 0px 3px 7px rgba(0,0,0,0.3);
         }
         nav a {
-            color: white;
+            color: #f8c471;
             text-decoration: none;
-            padding: 10px 20px;
+            padding: 15px 25px;
+            font-size: 1.2em;
+            transition: all 0.3s;
         }
-        section {
-            padding: 20px;
-            text-align: center;
+        nav a:hover {
+            color: #f39c12;
+            transform: scale(1.1);
         }
         .container {
             max-width: 1200px;
-            margin: auto;
-            background: white;
-            padding: 20px;
-            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+            margin: 30px auto;
+            background: rgba(255, 255, 255, 0.1);
+            padding: 30px;
+            border-radius: 12px;
+            box-shadow: 0px 6px 20px rgba(0,0,0,0.4);
         }
         footer {
-            background: #333;
+            background: linear-gradient(135deg, #1e3c72, #2a5298);
             color: white;
             text-align: center;
-            padding: 10px;
-            position: fixed;
-            bottom: 0;
+            padding: 20px;
+            position: relative;
             width: 100%;
+            box-shadow: 0px -4px 10px rgba(0,0,0,0.3);
+            font-size: 1.1em;
+        }
+        .contact-image {
+            display: block;
+            margin: 20px auto;
+            max-width: 80%;
+            border-radius: 12px;
+            box-shadow: 0px 4px 10px rgba(0,0,0,0.5);
         }
     </style>
 </head>
 <body>
     <header>
-        <h1>SLV ENGINEERING WORKS</h1>
-        <p>Innovating the Future</p>
+        <img src="logo.webp" alt="Company Logo" class="logo">
+        <h1>Fabricators</h1>
+        <p>Expert Metal Works & Custom Fabrication</p>
     </header>
     
     <nav>
-        <a href="#about">About</a>
-        <a href="#services">Services</a>
-        <a href="#contact">Contact</a>
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="services.html">Services</a>
+        <a href="contact.html">Contact</a>
     </nav>
     
-    <section id="about" class="container">
-        <h2>About Us</h2>
-        <p>SLV is a leading provider of innovative IT solutions, specializing in software development, cloud computing, and cybersecurity services.</p>
+    <section class="container">
+        <h2>Welcome to Fabricators</h2>
+        <p>We specialize in high-quality metal fabrication, welding, and custom metal works for industrial, commercial, and residential projects.</p>
     </section>
     
-    <section id="services" class="container">
-        <h2>Our Services</h2>
-        <ul>
-            <li>Custom Software Development</li>
-            <li>Cloud Computing Services</li>
-            <li>Cybersecurity Solutions</li>
-            <li>IT Consulting</li>
-        </ul>
+    <section id="about" class="container">
+        <h2>About SLV ENGINEERING WORKS</h2>
+        <p>SLV ENGINEERING WORKS initially started as SLV ENGINEERING WORKS in the year 1989, was established as a PVT LTD company in the year 2013. We are one of the leading quality fabricators of sheet metal and stainless steel components required for food processing, tyre building machinery for national and multinational companies.</p>
+        <p>Our product range includes fabrication of any type of sheet metal components. Ever since the establishment of our company, we have been satisfying the needs of numerous national & multinational companies for their sheet metal requirements.</p>
+        <p>At SLV ENGINEERING WORKS, we are known for quality performance and prompt delivery of our products. We have state-of-the-art infrastructure to manufacture high-quality sheet metal components as per customer satisfaction and drawings.</p>
+        <p>A team of qualified engineers & skilled technicians committed to quality standards manages SLV ENGINEERING WORKS. Our team of quality check inspectors maintains a strict vigil on the entire production process.</p>
     </section>
     
     <section id="contact" class="container">
         <h2>Contact Us</h2>
-        <p>Email: contact@abctech.com</p>
-        <p>Phone: (123) 456-7890</p>
+        <img src="100085825_296693154833520_6607872717507002368_n.jpg" alt="Contact Image" class="contact-image">
+        <p>Phone: 8660070009</p>
+        <p>Email: <a href="mailto:slvengineeringworks15@gmail.com">slvengineeringworks15@gmail.com</a></p>
     </section>
+
+    <!-- Adding new animation code to index page -->
+    <div class="container">
+        <svg class="svg-container" version="1.1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 200">
+            <line class="line line--left" x1="10" y1="17" x2="10" y2="183"> </line>
+            <line class="line line--rght" x1="490" y1="17" x2="490" y2="183"> </line>
+            <g>
+                <path class="lttr lttr--I" d="M42.2,73.9h11.4v52.1H42.2V73.9z"></path>
+                <!-- Additional SVG paths omitted for brevity -->
+            </g>
+        </svg>
+        <div class="mo-container"> </div>
+    </div>
+    <script src='https://cdn.jsdelivr.net/mojs/latest/mo.min.js'></script>
     
     <footer>
-        <p>&copy; 2025 ABC Tech Solutions. All rights reserved.</p>
+        <p>&copy; 2025 Fabricators. All rights reserved.</p>
     </footer>
 </body>
 </html>
